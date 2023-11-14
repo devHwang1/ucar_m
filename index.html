@@ -153,7 +153,10 @@
 
         shareButton.addEventListener("click", function () {
             // 링크를 복사
-            var linkToCopy = "http://tosscar.co.kr/";
+           var linkToCopy = `토스카에서 자동차 보험료 조회하세요.
+                            주요 보험사의 가격을 조회할 수 있어요.
+                            
+                            http://tosscar.co.kr/`;
             var tempInput = document.createElement("input");
             document.body.appendChild(tempInput);
             tempInput.value = linkToCopy;
@@ -162,7 +165,7 @@
             document.body.removeChild(tempInput);
 
             // 메시지를 표시
-            alert("링크가 복사되었습니다.");
+            alert("링크가 복사되었습니다");
         });
           // 모달 열기
           document.getElementById("openModalButton").addEventListener("click", function () {
